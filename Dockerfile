@@ -10,7 +10,7 @@ WORKDIR /home/blockbook
 
 RUN go build -tags rocksdb_6_16 -ldflags="-X github.com/trezor/blockbook/common.version=$BLOCKBOOK_VERSION -X github.com/trezor/blockbook/common.gitcommit=$(git describe --always --dirty) -X github.com/trezor/blockbook/common.buildtime=$(date --iso-8601=seconds)" \
     && strip blockbook \
-    && ./contrib/scripts/build-blockchaincfg.sh bellcoin
+    && ./contrib/scripts/build-blockchaincfg.sh bitcoin
 
 FROM debian:stretch-slim
 

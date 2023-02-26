@@ -1,6 +1,6 @@
 # docker-blockbook-bitcoin
 
-Dockerfile to launch Blockbook for Bitcoin
+Blockbook Dockerfile for Bitcoin
 
 ## Usage (directly from Docker Hub)
 
